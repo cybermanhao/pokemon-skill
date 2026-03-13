@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "WebFetch(domain:pokeapi.co)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:pokeapi.github.io)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:app.pokeapi.co)",
+      "Bash(git init:*)",
+      "Bash(git check-ignore:*)",
+      "Bash(git worktree:*)",
+      "Bash(cp -r /c/code/pokemon-skill/docs /c/code/pokemon-skill/.worktrees/dev/)",
+      "Bash(git add:*)",
+      "Bash(git merge:*)",
+      "Bash(git branch:*)",
+      "Bash(cd /c/code/pokemon-skill && rm -rf .worktrees/dev)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)"
+    ]
+  }
+}
