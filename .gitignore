@@ -1,2 +1,19 @@
 .worktrees/
 worktrees/
+
+# Eval workspaces
+pokemon-dev-workspace/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Env
+.env
+.env.local

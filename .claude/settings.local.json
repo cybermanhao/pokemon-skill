@@ -16,7 +16,15 @@
       "Bash(git branch:*)",
       "Bash(cd /c/code/pokemon-skill && rm -rf .worktrees/dev)",
       "Bash(git checkout:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/pokemon/pikachu\" | head -n 1)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/type/fire\" | head -n 1)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/move/thunderbolt\" | head -n 1)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/ability/static\" | head -n 1)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/item/potion\" | head -n 1)",
+      "Bash(curl -sI \"https://pokeapi.co/api/v2/evolution-chain/2\" | head -n 1)",
+      "Bash(gh api:*)",
+      "WebFetch(domain:api.github.com)"
     ]
   }
 }

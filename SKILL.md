@@ -9,7 +9,7 @@ description: Use when developing Pokemon games - provides documentation on battl
 
 ## 目录
 
-### 战斗模拟
+### 战斗模拟 (Battle Simulation)
 - [pkmn/sim](references/battle/pkmn-sim.md) - 战斗模拟器
 - [pkmn/dex](references/battle/pkmn-dex.md) - 统一数据层
 - [pkmn/sets](references/battle/pkmn-sets.md) - 队伍解析
@@ -17,11 +17,17 @@ description: Use when developing Pokemon games - provides documentation on battl
 - [pkmn/mods](references/battle/pkmn-mods.md) - 自定义扩展
 - [smogon/calc](references/battle/smogon-calc.md) - 伤害计算
 
+### 战斗核心机制 (Battle Core - Pokemon Showdown)
+- [battle-core](references/battle/battle-core.md) - 回合流程、优先级、速度排序
+- [damage-formula](references/battle/damage-formula.md) - 伤害计算公式 (Gen 1-9)
+- [ability-hooks](references/battle/ability-hooks.md) - 特性触发钩子系统
+- [status-conditions](references/battle/status-conditions.md) - 状态系统详解
+
 ### 数据 API
 - [PokéAPI REST](references/api/pokeapi-rest.md) - REST API
 - [PokéAPI GraphQL](references/api/pokeapi-graphql.md) - GraphQL API
 
-### 扩展接口
+### 扩展接口 (Extension)
 - [添加精灵](references/extend/pokemon.md)
 - [添加技能](references/extend/moves.md)
 - [添加特性](references/extend/abilities.md)
@@ -30,7 +36,7 @@ description: Use when developing Pokemon games - provides documentation on battl
 - [添加天气/地形](references/extend/weather.md)
 - [添加状态/效果](references/extend/conditions.md)
 
-### 地图数据
+### 地图数据 (Map Data)
 - [pret/pokered](references/tilemap/pokered.md) - 地图区块数据
 - [Porymap](references/tilemap/porymap.md) - 地图编辑器
 
