@@ -5,54 +5,28 @@ description: Use when answering Pokemon questions about game data (stats, types,
 
 # Pokemon 知识查询 Skill
 
-本 Skill 提供宝可梦游戏数据和lore知识的查询辅助，面向普通爱好者和研究人员。
+本 Skill 教你如何通过 PokéAPI 查询权威数据，**不提供静态答案**——Pokemon 数据复杂且有边缘情况，直接查 API 比依赖枚举更准确。
 
-## 目录
+## 数据查询（游戏数据）
 
-### 游戏数据
-- [图鉴查询](knowledge/game/pokedex.md) - 精灵种族值、属性
-- [属性相克](knowledge/game/types.md) - 属性克制关系表
-- [技能查询](knowledge/game/moves.md) - 技能威力、PP、效果
-- [特性查询](knowledge/game/abilities.md) - 特性效果说明
-- [道具查询](knowledge/game/items.md) - 道具效果
-- [进化链](knowledge/game/evolution.md) - 进化条件与路线
+所有游戏数据通过 PokéAPI 查询，base URL：`https://pokeapi.co/api/v2/`
 
-### 游戏lore
-- [角色设定](knowledge/lore/characters.md) - 动画/游戏角色
-- [地点设定](knowledge/lore/locations.md) - 地区、地点
-- [世界观](knowledge/lore/history.md) - 历史、传说
+- [精灵图鉴](game/pokedex.md) - 种族值、属性、特性、形态
+- [属性克制](game/types.md) - 单属性/双属性弱点计算，**含特性修正流程**
+- [技能数据](game/moves.md) - 威力、PP、效果
+- [特性查询](game/abilities.md) - 特性效果（权威来源，不要靠记忆）
+- [道具查询](game/items.md) - 效果、分类
+- [进化链](game/evolution.md) - 进化条件（条件多样，必须查 API）
 
-## 快速查询
+## Lore 查询
 
-### 常用数据源
+Lore 内容（角色、剧情、地点、历史）不在 PokéAPI 覆盖范围内，直接查：
 
-| 类型 | 来源 | URL |
-|------|------|-----|
-| 图鉴数据 | PokéAPI | https://pokeapi.co/api/v2/ |
-| 属性克制 | Smogon | https://smogon.com/dex/ |
-| 技能数据 | PokemonDB | https://pokemondb.net/move |
+- **Bulbapedia**: https://bulbapedia.bulbagarden.net — 最权威的 wiki
+- **Serebii**: https://serebii.net — 游戏/动画详细数据
 
-### 示例查询
+## 重要原则
 
-**查询精灵基础信息**:
-```
-GET https://pokeapi.co/api/v2/pokemon/pikachu
-```
+**遇到"X 精灵有哪些弱点/特性/进化条件"类问题，先查 API，不要依赖记忆。**
 
-**查询属性克制**:
-```
-GET https://pokeapi.co/api/v2/type/fire
-```
-
-## 回答规范
-
-- 使用中文优先，简明概要
-- 关键数据（种族值、属性克制）用表格呈现
-- lore内容需注明来源
-- 复杂问题可建议进一步查询
-
-## 知识来源优先级
-
-1. PokéAPI（权威游戏数据）
-2. Bulbapedia（详细设定）
-3. Serebii（对战数据）
+属性克制、特性效果、进化条件都有大量边缘情况，只有实时查询才能保证准确。
