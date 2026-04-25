@@ -24,7 +24,16 @@
       "Bash(curl -sI \"https://pokeapi.co/api/v2/item/potion\" | head -n 1)",
       "Bash(curl -sI \"https://pokeapi.co/api/v2/evolution-chain/2\" | head -n 1)",
       "Bash(gh api:*)",
-      "WebFetch(domain:api.github.com)"
+      "WebFetch(domain:api.github.com)",
+      "Bash(cat /c/code/pokemon-skill/docs/iteration-1/*.md)",
+      "Bash(git -C /c/code/pokemon-skill log --oneline -10)",
+      "Bash(git -C /c/code/pokemon-skill show fdc29ec --stat)",
+      "Bash(cat /c/code/pokemon-skill/pokemon-dev-workspace/iteration-1/evals/*.json)",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(f'Total evals: {len\\(d[\\\\\"evals\\\\\"]\\)}'\\)\")",
+      "Bash(python3:*)",
+      "Bash(node:*)",
+      "Bash(git:*)",
+      "Bash(wc:*)"
     ]
   }
 }
